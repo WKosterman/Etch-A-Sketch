@@ -6,15 +6,15 @@ const gridContainer = document.querySelector('#grid');
 
 
 for (var i = 0; i < 4; i++) { 
-    let promptText = document.createElement('div');
-    promptText.id = i;
-    promptText.classList.add('promptText'+i);
-    gridContainer.appendChild(promptText);
+    let rowDiv = document.createElement('div');
+    rowDiv.id = i;
+    rowDiv.classList.add('rowDiv');
+    gridContainer.appendChild(rowDiv);
     for (var j = 0; j < 4; j++) { 
-        let promptTextCol = document.createElement('span');
-        promptTextCol.id = i;
-        promptTextCol.classList.add('promptTextCol'+i);
-        promptTextCol.textContent = "TestCol";
-        promptText.appendChild(promptTextCol);
+        let colSpan = document.createElement('span');
+        colSpan.id = i;
+        colSpan.classList.add('colSpan');
+        colSpan.textContent = "TestCol";
+        rowDiv.appendChild(rowDiv);
     }
 }
