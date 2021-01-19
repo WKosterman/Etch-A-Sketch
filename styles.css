@@ -22,6 +22,6 @@ body {
     background-color: rgb(4, 0, 255);    
 }
 
-.buttonContainer {
-    /*margin: 100px;*/
+#clearGrid {
+    margin: 20px;
 }
